@@ -32,9 +32,9 @@ k = np.linspace(1, choice[4], choice[4])
 dy = np.log(choice[7] / choice[6]) / (choice[4] - 1)
 small_ds = dy / 100  # for calculating delta
 if randomchoice == 0:
-    y = math.log(choice[6]) + (k - 1) * dy
+    y = np.log(choice[6]) + (k - 1) * dy
 elif randomchoice == 1:
-    y = math.log(choice[6]) + random_number_generator(choice[7], choice[4])
+    y = np.log(choice[6]) + random_number_generator(choice[7], choice[4])
     # we still define dy as constant, for the use of Hardy's MQ
 
 IC = initial_condition(choice[0], y, putorcall)
@@ -51,6 +51,7 @@ part_P_1 = np.dot((choice[1] - 0.5 * choice[2] ** 2),
                   inv_L * choice_of_kernel_var[1])
 P_1 = np.subtract(np.transpose(part_P),
                   (choice[1] * np.eye(choice[4], choice[4]))) # Transposed part_P
+
 P = np.subtract(P_1, np.transpose(part_P_1))  # Transposed part_P_1
 
 for i in range(1, choice[5]):  # time
