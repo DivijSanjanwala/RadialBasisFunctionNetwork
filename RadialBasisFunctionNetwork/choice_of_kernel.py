@@ -4,10 +4,10 @@ from typing import List
 
 
 def choice_of_kernel(kernelChoice, n, y, dy):
-    deltaY = np.conjugate(np.meshgrid(y, y)) -  np.meshgrid(y, y)
+    deltaY = np.subtract(np.transpose(np.meshgrid(y, y))) - np.meshgrid(y, y)
     if kernelChoice == 10:  # suppose kernelchoice = 10 refers to Hardy's MQ;
         c = 4 * dy
-        L = np.sqrt(squaredeltaY + (c ** 2))
+        L = np.sqrt(deltaY + (c ** 2))
         DL = deltaY / L
         D2L = 1 / L - deltaY ** 2 / L ** 3
         return [L, DL, D2L, c]
