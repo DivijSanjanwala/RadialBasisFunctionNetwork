@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="eac47c90-aef0-4e1b-8168-84c8b412e23c" name="Default Changelist" comment="Initial Commit">
+    <list default="true" id="eac47c90-aef0-4e1b-8168-84c8b412e23c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EigenvalueRepresentation.py" beforeDir="false" afterPath="$PROJECT_DIR$/EigenvalueRepresentation.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RBF_OptionPrice.py" beforeDir="false" afterPath="$PROJECT_DIR$/RBF_OptionPrice.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TransformBack.py" beforeDir="false" afterPath="$PROJECT_DIR$/TransformBack.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/choice_of_int_sch.py" beforeDir="false" afterPath="$PROJECT_DIR$/choice_of_int_sch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/choice_of_kernel.py" beforeDir="false" afterPath="$PROJECT_DIR$/choice_of_kernel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/initial_condition.py" beforeDir="false" afterPath="$PROJECT_DIR$/initial_condition.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/type_of_option.py" beforeDir="false" afterPath="$PROJECT_DIR$/type_of_option.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,22 +51,22 @@
     <property name="options.lastSelected" value="configurable.group.tools" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.splitter.main.proportions" value="0.32666665" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.externalResources" />
   </component>
-  <component name="RunManager" selected="Python.RBF_OptionPrice">
+  <component name="RunManager" selected="Python.EigenvalueRepresentation">
     <configuration name="EigenvalueRepresentation" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
-      <module name="RadialBasisFunctionNetwork" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="C:\Users\sanja\venv\Scripts\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\sanja\PycharmProjects\RadialBasisFunctionNetwork\EigenvalueRepresentation.py" />
+      <module name="" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/PycharmProjects/RadialBasisFunctionNetwork/EigenvalueRepresentation.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -67,17 +76,14 @@
       <method v="2" />
     </configuration>
     <configuration name="RBF_OptionPrice" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="RadialBasisFunctionNetwork" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="C:\Users\sanja\venv\Scripts\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RBF_OptionPrice.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
@@ -197,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625218709979</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Initial Commit">
+      <created>1625243764002</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1625243764002</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

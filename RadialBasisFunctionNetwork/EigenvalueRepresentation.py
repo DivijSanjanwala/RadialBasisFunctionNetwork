@@ -13,9 +13,7 @@ def Eigenvalue_Representation(P, L, inv_L, IC, T, index, y, c, small_ds,
 
     # TODO: np.divide instead of / since W =np eig doesnt have class _truediv_
 
-    k_coefficient = np.transpose(np.divide(W,
-                                           (inv_L * IC))) * \
-                    math.exp(- np.diag(lambda_) * T)
+    k_coefficient = (W / (inv_L * IC)) * np.exp(- np.diag(lambda_) * T)
 
     alpha_by_eigen = W * k_coefficient
 

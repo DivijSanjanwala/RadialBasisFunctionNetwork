@@ -45,14 +45,12 @@ choice_of_kernel_var = choice_of_kernel(kernelchoice, choice[4], y, dy)
 # inv_L = np.linalg.inv(np.transpose(choice_of_kernel_var[0]))
 
 inv_L = (choice_of_kernel_var[0]) ** (-1)
-a = (np.dot(np.transpose(inv_L), IC))
-part_P = np.dot(inv_L * choice_of_kernel_var[2], 0.5 * (choice[2] ** 2))
-part_P_1 = np.dot((choice[1] - 0.5 * choice[2] ** 2),
-                  inv_L * choice_of_kernel_var[1])
-P_1 = np.subtract(np.transpose(part_P),
-                  (choice[1] * np.eye(choice[4], choice[4]))) # Transposed part_P
+a = inv_L * IC
+part_P = (inv_L * choice_of_kernel_var[2]) * 0.5 * (choice[2] ** 2)
+part_P_1 = (choice[1] - 0.5 * choice[2] ** 2) * inv_L * choice_of_kernel_var[1]
+P_1 = part_P - (choice[1] * np.eye(choice[4]) -  choice[4])
 
-P = np.subtract(P_1, np.transpose(part_P_1))  # Transposed part_P_1
+P = P_1 - part_P_1
 
 for i in range(1, choice[5]):  # time
     a = type_of_option(choice_of_kernel_var[0],
