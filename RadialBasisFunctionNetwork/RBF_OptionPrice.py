@@ -60,9 +60,10 @@ for i in range(1, choice[5]):  # time
 
 # Backward transform to obtain the European option prices (Compare with Table
 # 2 on Page 11) [u uplus]
-transform_back = TransformBack(choice[-1], y, choice_of_kernel_var[-1], a,
-                               small_ds, indexlength, kernelchoice)
-delta = (transform_back[1] - transform_back[0]) / small_ds
+transform_back = TransformBack(choice[-1], y, choice_of_kernel_var[-1], a, small_ds, indexlength, kernelchoice)
+u = np.array(transform_back[0])
+uplus = np.array(transform_back[1])
+delta = (uplus - u) / small_ds
 
 print([['Stock  ' 'Option ' 'Delta  '],
        str([choice[-1], transform_back[0], delta])])
