@@ -48,7 +48,7 @@ inv_L = (choice_of_kernel_var[0]) ** (-1)
 a = inv_L * IC
 part_P = (inv_L * choice_of_kernel_var[2]) * 0.5 * (choice[2] ** 2)
 part_P_1 = (choice[1] - 0.5 * choice[2] ** 2) * inv_L * choice_of_kernel_var[1]
-P_1 = part_P - (choice[1] * np.eye(choice[4]) -  choice[4])
+P_1 = part_P - (choice[1] * np.eye(choice[4]) - choice[4])
 
 P = P_1 - part_P_1
 
